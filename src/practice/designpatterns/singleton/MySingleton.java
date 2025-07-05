@@ -4,10 +4,10 @@ public class MySingleton {
     private MySingleton() {
     }
 
-    private static MySingleton instance = new MySingleton();
+    private static final MySingleton MY_INSTANCE = new MySingleton();
 
     public static MySingleton getInstance() {
-        return instance;
+        return MY_INSTANCE;
     }
 
     public void showMessage() {
